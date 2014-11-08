@@ -25,7 +25,7 @@ $(document).ready(function() {
 		$('section#game').append('<div style=\'display: none; top: ' + characters[i].y + 'px; left: ' + characters[i].x + 'px; background-color: ' + colors[characters[i].color] + '; z-index: ' + (i + 2) + ';\'></div>');
 		characters[i].html = $('section#game div:last-child');
 	}
-	for (i = 0; i < characters.length * 2.5; i++) {
+	for (i = 0; i < characters.length * 4; i++) {
 		coins[i] = {
 			'x': (Math.random() * (windowWidth - 21)) | 0,
 			'y': (Math.random() * (windowHeight - 21)) | 0
